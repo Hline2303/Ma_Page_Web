@@ -1,3 +1,13 @@
+/* Général */
+@font-face {
+  font-family: "hollywood_festivalregular";
+  src: url("../fonts/hollywood_festival-webfont.woff2") format("woff2"),
+    url("../fonts/hollywood_festival-webfont.woff") format("woff"),
+    url("..fonts/Hollywood Festival.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,15 +16,6 @@
 html {
   font-family: "arial";
   font-size: 16px;
-}
-
-@font-face {
-  font-family: "hollywood_festivalregular";
-  src: url("../fonts/hollywood_festival-webfont.woff2") format("woff2"),
-    url("../fonts/hollywood_festival-webfont.woff") format("woff"),
-    url("..fonts/Hollywood Festival.ttf");
-  font-weight: normal;
-  font-style: normal;
 }
 
 h1 {
@@ -49,10 +50,12 @@ a:hover {
   color: #d6022b;
 }
 
-section {
+/* Partie Hero */
+#hero {
   background: url(images/geralt_abstract-pix.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100%;
   padding-bottom: 1%;
 }
 
@@ -98,11 +101,47 @@ nav {
   border-radius: 50%;
 } */
 
-img {
+#contenu img {
   border-radius: 50%;
   transition: 1s;
 }
 
-img:hover {
+#contenu img:hover {
   transform: rotateY(180deg);
 }
+
+/* Partie A propos */
+#apropos {
+  display: flex;
+}
+
+#apropos_image {
+  flex: 1;
+}
+
+#apropos_image img {
+  flex: 1;
+  max-width: 100%;
+}
+
+#apropos_texte {
+  padding: 20px;
+  flex: 2;
+  text-align: justify;
+}
+
+/* Partie Services */
+#services {
+  display: flex;
+  background-color: rgb(70, 67, 70);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.services_item p {
+  text-align: justify;
+  padding: 20px;
+}
+
+/* Partie Responsive */
