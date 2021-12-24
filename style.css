@@ -145,3 +145,17 @@ nav {
 }
 
 /* Partie Responsive */
+@media screen and (max-width: 414px) {
+    nav a {
+        display: block;
+        padding: 10px;
+    }
+    
+    #apropos {
+        flex-direction: column;
+    }
+
+    #services {
+        flex-direction: column;
+    }
+}
