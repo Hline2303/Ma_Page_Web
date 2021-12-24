@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "arial";
+  font-size: 16px;
+}
+
+@font-face {
+  font-family: "hollywood_festivalregular";
+  src: url("../fonts/hollywood_festival-webfont.woff2") format("woff2"),
+    url("../fonts/hollywood_festival-webfont.woff") format("woff"),
+    url("..fonts/Hollywood Festival.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  color: #d6022b;
+  text-shadow: 1px 1px 1px white;
+  font-size: 75px;
+  font-family: "hollywood_festivalregular", sans-serif;
+}
+
+h2 {
+  color: #d6022b;
+  font-size: 50px;
+  font-family: sans-serif;
+}
+
+h3 {
+  color: #d6022b;
+  font-size: 30px;
+  font-family: sans-serif;
+}
+
+a {
+  /* color: rgb(70, 202, 8); Couleur rose/orangé à tester */
+  color: white;
+  padding: 20px;
+  text-decoration: none;
+  transition: 1s;
+}
+
+a:hover {
+  /* color: rgb(255, 251, 0); */
+  color: #d6022b;
+}
+
+section {
+  background: url(images/geralt_abstract-pix.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 1%;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 20px;
+}
+
+#bandeau {
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+#contenu {
+  text-align: center;
+  padding: 4%;
+  /* width: 50%; */
+}
+
+#contenu a {
+  color: #d6022b;
+  border: 1px solid #d6022b;
+  border-radius: 15px;
+  padding: 20px;
+  transition: ease 1.5s;
+}
+
+#contenu a:hover {
+  color: white;
+  background-color: #d6022b;
+}
+
+/* #contenu img:hover {
+  transform: rotateY(180deg);
+} */
+
+/* #bordure {
+  width: 354px;
+  height: 432px;
+  border: white 1px solid;
+  border-radius: 50%;
+} */
+
+img {
+  border-radius: 50%;
+  transition: 1s;
+}
+
+img:hover {
+  transform: rotateY(180deg);
+}
