@@ -144,18 +144,39 @@ nav {
   padding: 20px;
 }
 
+#reseaux {
+  display: flex;
+  justify-content: center;
+}
+
+#reseaux a {
+  color: black;
+}
+
+#reseaux a:hover {
+  color: #d6022b;
+}
+
+.social {
+  padding: 20px;
+}
+
+footer {
+  text-align: center;
+}
+
 /* Partie Responsive */
 @media screen and (max-width: 414px) {
-    nav a {
-        display: block;
-        padding: 10px;
-    }
-    
-    #apropos {
-        flex-direction: column;
-    }
+  nav a {
+    display: block;
+    padding: 10px;
+  }
 
-    #services {
-        flex-direction: column;
-    }
+  #apropos {
+    flex-direction: column;
+  }
+
+  #services {
+    flex-direction: column;
+  }
 }
