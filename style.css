@@ -165,6 +165,54 @@ footer {
   text-align: center;
 }
 
+/* Partie Modal */
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(243,235,72,0.76);
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  overflow: auto;
+}
+
+.modalBloc {
+  margin: 10% auto;
+  padding: 70px;
+  width: 50%;
+  text-align: center;
+  background-color: white;
+  color: black;
+  border-top: 10px solid black;
+}
+
+.modalBtn {
+  margin: 5%;
+}
+
+.modalBtn a {
+  color: white;
+  background-color: black;
+}
+
+.modalBtn a:hover {
+  opacity: 0.7;
+}
+
+.modalTextTitle {
+  font-size: 60px;
+  font-family: 'Lobster', cursive;
+}
+
+.modalTextSubtitle {
+  font-size: 20px;
+}
+
+.modalText img {
+  width: 60%;
+}
+
 /* Partie Responsive */
 @media screen and (max-width: 414px) {
   nav a {
@@ -178,5 +226,14 @@ footer {
 
   #services {
     flex-direction: column;
+  }
+
+  .modalTextTitle {
+    font-size: 40px;
+  }
+
+  .modalBtn a {
+    display: block;
+    margin-bottom: 5%;
   }
 }
